@@ -1,0 +1,48 @@
+﻿@model IEnumerable<string>
+
+<li>
+    @Html.ActionLink("Главная", "Index", "Home", null, new
+    {
+        @class = ""
+            + (null == ViewBag.SelectedCategory ? "active" : "")
+    })
+</li>
+@foreach (var link in Model){
+    <li>
+        @Html.RouteLink(link, new
+        {
+            controller = "Category",
+            action = "Index",
+            category = link,
+            page = 1
+        }, new
+            {
+                @class = ""
+                    + (link == ViewBag.SelectedCategory ? "active" : "")
+            })
+    </li>
+}
+<li>
+    @Html.RouteLink("Житие мое", new
+        {
+            controller = "About",
+            action = "Index",
+            category = "Житие мое"
+        }, new
+        {
+        @class = ""
+            + ("Житие мое" == ViewBag.SelectedCategory ? "active" : "")
+        })
+</li>
+<li>
+    @Html.RouteLink("Контакты", new
+        {
+            controller = "Contacts",
+            action = "Index",
+            category = "Контакты"
+        }, new
+    {
+        @class = ""
+            + ("Контакты" == ViewBag.SelectedCategory ? "active" : "")
+    })
+</li>

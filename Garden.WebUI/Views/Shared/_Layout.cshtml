@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" type="text/css" href="~/Content/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="~/Content/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="~/Content/css/media-queries.css" />
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="headerContent">
+                <div class="logo"><a href="">Вольны<span class="pink">Араты</span></a></div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="leftCol">
+                <ul class="leftNav">
+                    @Html.Action("Menu", "Nav")
+                </ul>
+                <div class="block">
+                    <h3>Статьи</h3>
+                    <p><i>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</i></p>
+                    <p><a href="#" class="more">Read more »</a></p>
+                </div>
+            </div>
+
+
+            @RenderBody()
+
+
+        </div>
+        <div class="footer">
+            <p>&copy; Footer content <a href="#">Link footer</a></p>
+        </div>
+    </div>
+
+
+    <script src="~/Scripts/libs.min.js"></script>
+    @RenderSection("scripts", required: false)
+    <script src="~/Scripts/css3-mediaqueries.js"></script>
+</body>
+</html>

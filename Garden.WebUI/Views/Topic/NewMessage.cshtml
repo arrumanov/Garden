@@ -1,0 +1,3 @@
+﻿@model Garden.Domain.Entities.Topic
+
+@Html.CommentsList(Model.Messages.OrderByDescending(m => m.Date))

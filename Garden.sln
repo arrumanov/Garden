@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Garden.Domain", "Garden.Domain\Garden.Domain.csproj", "{7B896F33-7371-4951-809F-4E35C4A3592E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Garden.WebUI", "Garden.WebUI\Garden.WebUI.csproj", "{95A79909-A8D4-40A0-87A6-2AF14010B07A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Garden.UnitTests", "Garden.UnitTests\Garden.UnitTests.csproj", "{F78D2D98-7559-4ACB-9FED-5730325FB009}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7B896F33-7371-4951-809F-4E35C4A3592E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B896F33-7371-4951-809F-4E35C4A3592E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B896F33-7371-4951-809F-4E35C4A3592E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B896F33-7371-4951-809F-4E35C4A3592E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95A79909-A8D4-40A0-87A6-2AF14010B07A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95A79909-A8D4-40A0-87A6-2AF14010B07A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95A79909-A8D4-40A0-87A6-2AF14010B07A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95A79909-A8D4-40A0-87A6-2AF14010B07A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F78D2D98-7559-4ACB-9FED-5730325FB009}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F78D2D98-7559-4ACB-9FED-5730325FB009}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F78D2D98-7559-4ACB-9FED-5730325FB009}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F78D2D98-7559-4ACB-9FED-5730325FB009}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,52 @@
+﻿@using System
+@model Garden.Domain.Entities.Topic
+
+@{
+    ViewBag.Title = Model.TopicName;
+
+    var options = new AjaxOptions()
+    {
+        UpdateTargetId = "comments",
+        Url = Url.Action("NewMessage")
+    };
+}
+
+<div class="main">
+    <h2>
+        @Model.TopicName |
+        @Html.RouteLink("Back to List", new
+        {
+            controller = "Category",
+            action = "Index",
+            category = ViewBag.CategoryOfTopic
+        }, new { @class="captionTopic"})
+    </h2>
+
+    @Html.Raw(Model.ContentTopic)
+
+    @using (Ajax.BeginForm(options))
+    {
+        @Html.HiddenFor(t => t.TopicName)
+        @Html.HiddenFor(t => t.TopicId)
+        <div class="form-group">
+            <label>Добавить комментарий</label>
+
+            <textarea id="textMessage" name="NewMessage" rows="10"></textarea>
+
+            <div>
+                <button type="submit" @*onclick="document.getElementById('textMessage').value = '';"*@>Сохранить</button>
+                <br />
+                <br />
+            </div>
+        </div>
+
+    <div id="comments">@Html.CommentsList(Model.Messages.OrderByDescending(m => m.Date))</div>
+    }
+
+</div>
+
+
+@* для правильной работы Ajax *@
+@section Scripts{
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+}
