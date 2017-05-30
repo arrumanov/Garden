@@ -13,6 +13,20 @@ namespace Garden.WebUI
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
+            routes.MapRoute(
+               name: "",
+               url: "{category}/{page}",
+               defaults: new { controller = "Category", action = "Index" },
+               constraints: new { page=@"\d+"}
+           );
+
+            routes.MapRoute(
+                name: "",
+                url: "{controller}/{action}/{category}",
+                defaults: null
+            );
+
+
             //Установка стандартного маршрута
             routes.MapRoute(
                 name: "Default",

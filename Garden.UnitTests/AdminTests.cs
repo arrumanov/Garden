@@ -37,46 +37,46 @@ namespace Garden.UnitTests
             Assert.AreEqual("Сад", result[3].CategoryName);
         }
 
-        //Модульное тестирование: метод действия Edit()
-        [TestMethod]
-        public void Can_Edit_Topic()
-        {
-            // Организация - создание имитированного хранилища данных
-            Mock<ICategoryRepository> mock = new Mock<ICategoryRepository>();
-            mock.Setup(m => m.GetAll).Returns(Initial_Setting());
+        // //Модульное тестирование: метод действия Edit()
+        // [TestMethod]
+        // public void Can_Edit_Topic()
+        // {
+        //     // Организация - создание имитированного хранилища данных
+        //     Mock<ICategoryRepository> mock = new Mock<ICategoryRepository>();
+        //     mock.Setup(m => m.GetAll).Returns(Initial_Setting());
 
-            // Организация - создание контроллера
-            AdminController controller = new AdminController(mock.Object, null, null);
+        //     // Организация - создание контроллера
+        //     AdminController controller = new AdminController(mock.Object, null, null);
 
-            // Действие
-            Topic topic1 = controller.Edit(1, 7).ViewData.Model as Topic;
-            Topic topic2 = controller.Edit(2, 3).ViewData.Model as Topic;
-            Topic topic3 = controller.Edit(3, 8).ViewData.Model as Topic;
-            Topic topic4 = controller.Edit(4, 8).ViewData.Model as Topic;
+        //     // Действие
+        //     Topic topic1 = controller.Edit(1, 7).ViewData.Model as Topic;
+        //     Topic topic2 = controller.Edit(2, 3).ViewData.Model as Topic;
+        //     Topic topic3 = controller.Edit(3, 8).ViewData.Model as Topic;
+        //     Topic topic4 = controller.Edit(4, 8).ViewData.Model as Topic;
 
-            // Assert
-            Assert.AreEqual(7, topic1.TopicId);
-            Assert.AreEqual(3, topic2.TopicId);
-            Assert.AreEqual(8, topic3.TopicId);
-            Assert.AreEqual(9, topic4.TopicId);
-        }
+        //     // Assert
+        //     Assert.AreEqual(7, topic1.TopicId);
+        //     Assert.AreEqual(3, topic2.TopicId);
+        //     Assert.AreEqual(8, topic3.TopicId);
+        //     Assert.AreEqual(9, topic4.TopicId);
+        // }
 
-        //Модульное тестирование: метод действия Edit()
-        [TestMethod]
-        public void Cannot_Edit_Nonexistent_Topic()
-        {
-            // Организация - создание имитированного хранилища данных
-            Mock<ICategoryRepository> mock = new Mock<ICategoryRepository>();
-            mock.Setup(m => m.GetAll).Returns(Initial_Setting());
+        // //Модульное тестирование: метод действия Edit()
+        // [TestMethod]
+        // public void Cannot_Edit_Nonexistent_Topic()
+        // {
+        //     // Организация - создание имитированного хранилища данных
+        //     Mock<ICategoryRepository> mock = new Mock<ICategoryRepository>();
+        //     mock.Setup(m => m.GetAll).Returns(Initial_Setting());
 
-            // Организация - создание контроллера
-            AdminController controller = new AdminController(mock.Object, null, null);
+        //     // Организация - создание контроллера
+        //     AdminController controller = new AdminController(mock.Object, null, null);
 
-            // Действие
-            Topic result = controller.Edit(2, 7).ViewData.Model as Topic;
+        //     // Действие
+        //     Topic result = controller.Edit(2, 7).ViewData.Model as Topic;
 
-            // Assert
-        }
+        //     // Assert
+        // }
 
         //Модульное тестирование: отправки, связанные с редактированием
         [TestMethod]

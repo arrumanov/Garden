@@ -7,7 +7,8 @@
     var options = new AjaxOptions()
     {
         UpdateTargetId = "comments",
-        Url = Url.Action("NewMessage")
+        Url = Url.Action("NewMessage"),
+        OnSuccess = "OnSuccess"
     };
 }
 
@@ -44,6 +45,12 @@
     }
 
 </div>
+
+<script type="text/javascript">
+    function OnSuccess(data) {
+        document.getElementById('textMessage').value = '';
+    }
+</script>
 
 
 @* для правильной работы Ajax *@

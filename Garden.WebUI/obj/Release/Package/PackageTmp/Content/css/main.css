@@ -1,0 +1,40 @@
+.wrap-galleria {
+  width: 90%;
+  height: 400px;
+  margin: 20px auto; }
+
+.galleria {
+  width: 100%;
+  height: 100%; }
+
+.galleria img {
+  width: 90%; }
+
+@media screen and (max-width: 850px) {
+  .wrap-galleria {
+    height: 300px; } }
+
+@media screen and (max-width: 700px) {
+  .wrap-galleria {
+    display: none; } }
+
+@media screen and (max-width: 400px) {
+  .main p.img-link {
+    display: none; } }
+
+.wrap {
+  min-height: 250px; }
+
+iframe {
+  width: 100%;
+  height: 300px;
+  float: right;
+  margin: 20px; }
+
+h2.inline {
+  max-width: 100%;
+  text-align: left; }
+
+@media screen and (max-width: 650px) {
+  iframe {
+    float: none; } }

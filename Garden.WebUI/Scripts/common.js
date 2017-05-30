@@ -14,6 +14,6 @@ $(function() {
             menu.removeAttr('style');
         }
     });*/
-    Galleria.loadTheme('Libs/galleria/dist/themes/classic/galleria.classic.min.js');
+    Galleria.loadTheme('../../Libs/galleria/dist/themes/classic/galleria.classic.min.js');
     Galleria.run('.galleria');
 });

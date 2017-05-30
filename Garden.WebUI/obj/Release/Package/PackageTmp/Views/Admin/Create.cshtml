@@ -1,0 +1,55 @@
+﻿@model Garden.Domain.Entities.Topic
+
+@{
+    ViewBag.Title = "Админ панель: создание темы";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="panel">
+    <div class="panel-heading">
+        <h3>Редактирование темы «@Model.TopicName»</h3>
+    </div>
+
+    @using (Html.BeginForm("Create", "Admin"))
+    {
+        <div class="panel-body">
+            @Html.HiddenFor(t => t.TopicId)
+            @foreach (var property in ViewData.ModelMetadata.Properties)
+            {
+                if (property.PropertyName != "TopicId" && property.PropertyName != "Messages" && property.PropertyName != "Category")
+                {
+                    <div class="form-group">
+                        <label>@(property.DisplayName ?? property.PropertyName)</label>
+                        @if (property.PropertyName == "ContentTopic")
+                        {
+                            @Html.TextArea(property.PropertyName, null,
+                                new { @class = "form-control", rows = 10 })
+                        }
+                        else
+                        {
+                            @Html.TextBox(property.PropertyName, null,
+                                new { @class = "form-control" })
+                        }
+                        @Html.ValidationMessage(property.PropertyName)
+                    </div>
+                }
+            }
+
+            <label>Название категории</label>
+            <div class="editor-field" style="width: 200px;">
+                @Html.DropDownList("CategoryName",
+                    new SelectList(new[] { "Томаты", "Селекция томатов", "Виноград", "Сад" }),
+                    new { @class = "form-control" })
+            </div>
+
+
+        </div>
+        <div class="panel-footer">
+            <input type="submit" value="Сохранить" class="btn btn-primary" />
+            @Html.ActionLink("Отменить изменения и вернуться к списку", "Index", null, new
+            {
+                @class = "btn btn-default"
+            })
+        </div>
+    }
+</div>
