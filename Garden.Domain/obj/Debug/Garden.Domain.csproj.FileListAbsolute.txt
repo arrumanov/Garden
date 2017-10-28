@@ -91,3 +91,34 @@ C:\Users\Pc\Desktop\Garden\Garden.Domain\bin\Debug\System.Web.WebPages.Razor.xml
 C:\Users\Pc\Desktop\Garden\Garden.Domain\obj\Debug\Garden.Domain.csprojResolveAssemblyReference.cache
 C:\Users\Pc\Desktop\Garden\Garden.Domain\obj\Debug\Garden.Domain.dll
 C:\Users\Pc\Desktop\Garden\Garden.Domain\obj\Debug\Garden.Domain.pdb
+C:\Мои работы\Repos\Garden\Garden.Domain\bin\Debug\Garden.Domain.dll.config
+C:\Мои работы\Repos\Garden\Garden.Domain\bin\Debug\Garden.Domain.dll
+C:\Мои работы\Repos\Garden\Garden.Domain\bin\Debug\Garden.Domain.pdb
+C:\Мои работы\Repos\Garden\Garden.Domain\bin\Debug\EntityFramework.dll
+C:\Мои работы\Repos\Garden\Garden.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Мои работы\Repos\Garden\Garden.Domain\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Мои работы\Repos\Garden\Garden.Domain\bin\Debug\Newtonsoft.Json.dll
+C:\Мои работы\Repos\Garden\Garden.Domain\bin\Debug\System.Net.Http.Formatting.dll
+C:\Мои работы\Repos\Garden\Garden.Domain\bin\Debug\System.Web.Helpers.dll
+C:\Мои работы\Repos\Garden\Garden.Domain\bin\Debug\System.Web.Http.dll
+C:\Мои работы\Repos\Garden\Garden.Domain\bin\Debug\System.Web.Http.WebHost.dll
+C:\Мои работы\Repos\Garden\Garden.Domain\bin\Debug\System.Web.Mvc.dll
+C:\Мои работы\Repos\Garden\Garden.Domain\bin\Debug\System.Web.Razor.dll
+C:\Мои работы\Repos\Garden\Garden.Domain\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Мои работы\Repos\Garden\Garden.Domain\bin\Debug\System.Web.WebPages.dll
+C:\Мои работы\Repos\Garden\Garden.Domain\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Мои работы\Repos\Garden\Garden.Domain\bin\Debug\EntityFramework.xml
+C:\Мои работы\Repos\Garden\Garden.Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Мои работы\Repos\Garden\Garden.Domain\bin\Debug\Newtonsoft.Json.xml
+C:\Мои работы\Repos\Garden\Garden.Domain\bin\Debug\System.Net.Http.Formatting.xml
+C:\Мои работы\Repos\Garden\Garden.Domain\bin\Debug\System.Web.Helpers.xml
+C:\Мои работы\Repos\Garden\Garden.Domain\bin\Debug\System.Web.Http.xml
+C:\Мои работы\Repos\Garden\Garden.Domain\bin\Debug\System.Web.Http.WebHost.xml
+C:\Мои работы\Repos\Garden\Garden.Domain\bin\Debug\System.Web.Mvc.xml
+C:\Мои работы\Repos\Garden\Garden.Domain\bin\Debug\System.Web.Razor.xml
+C:\Мои работы\Repos\Garden\Garden.Domain\bin\Debug\System.Web.WebPages.xml
+C:\Мои работы\Repos\Garden\Garden.Domain\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Мои работы\Repos\Garden\Garden.Domain\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Мои работы\Repos\Garden\Garden.Domain\obj\Debug\Garden.Domain.csprojResolveAssemblyReference.cache
+C:\Мои работы\Repos\Garden\Garden.Domain\obj\Debug\Garden.Domain.dll
+C:\Мои работы\Repos\Garden\Garden.Domain\obj\Debug\Garden.Domain.pdb
